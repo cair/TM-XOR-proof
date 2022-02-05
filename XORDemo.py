@@ -1,5 +1,5 @@
 #!/usr/bin/python
-
+# import cython
 import numpy as np
 import pyximport; pyximport.install(setup_args={
                               "include_dirs":np.get_include()},
@@ -7,7 +7,7 @@ import pyximport; pyximport.install(setup_args={
 
 import XOR
 
-X = np.random.random_integers(0,1,size=(10000,2)).astype(dtype=np.int32)
+X = np.random.randint(2, size=(10000,2), dtype=np.int32)
 Y = np.ones([10000]).astype(dtype=np.int32)
 
 for i in range(10000):

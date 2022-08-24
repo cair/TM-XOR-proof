@@ -6,7 +6,7 @@ The Tsetlin Machine (TM) is a novel machine learning algorithm with several dist
 
 #### Code: XORDemo.py
 
-Here we have the basic experiment of the proof where we utilize a Tsetlin Machine having merely two clauses to learn the sub-patterns of only class 1. At the end, the states of the Tsetlin automata in both the clauses are printed to reveal the pattern the each clause has learned.
+Here we have the basic experiment of the proof where we utilize a Tsetlin Machine having merely two clauses to learn the sub-patterns of only class 1. Towards the end of the code, the state of the Tsetlin automata at end of training in both the clauses are printed to reveal the pattern the each clause has learned. As prented below in the output, the clause 1 has learned the pattern (0 1) while the clause 2 learns pattern (1 0).
 
 ```ruby
 #!/usr/bin/python

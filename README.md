@@ -5,6 +5,9 @@ The Tsetlin Machine (TM) is a novel machine learning algorithm with several dist
 (https://arxiv.org/abs/2101.02547)
 
 #### Code: XORDemo.py
+
+Here we have the basic experiment of the proof where we utilize a Tsetlin Machine having merely two clauses to learn the sub-patterns of only class 1. At the end, the states of the Tsetlin automata in both the clauses are printed to reveal the pattern the each clause has learned.
+
 ```ruby
 #!/usr/bin/python
 # import cython
@@ -68,6 +71,7 @@ for clause in range(number_of_clauses):
             print('feature %d TA %d State %d' % (feature, tatype+1, State)),
     print('/n')
 ```
+#### Output
 ```
 Clause 1
 feature 0 TA 1 State 99

@@ -4,8 +4,7 @@ The Tsetlin Machine (TM) is a novel machine learning algorithm with several dist
 
 (https://arxiv.org/abs/2101.02547)
 
-### Code: XORDemo.py
-
+#### Code: XORDemo.py
 ```ruby
 #!/usr/bin/python
 # import cython
@@ -71,7 +70,7 @@ for clause in range(number_of_clauses):
 ```
 
 
-
+#### Code: XORDemo_print.py
 ```ruby
 #!/usr/bin/python
 
@@ -125,6 +124,7 @@ tsetlin_machine.fit(X_training, y_training, y_training.shape[0], epochs=epochs)
 print ("Accuracy on test data (no noise):", tsetlin_machine.evaluate(X_test, y_test, y_test.shape[0]))
 ```
 
+#### proof_of_the_convergence.py
 ```ruby
 import numpy as np
 

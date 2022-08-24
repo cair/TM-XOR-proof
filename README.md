@@ -149,6 +149,10 @@ Accuracy on test data (no noise): 1.0
 ```
 
 #### Code: proof_of_the_convergence.py
+
+This the python implementation of Algorithm 1 in Apendix 1 of the ariticle. Mainly, the code generates the Transition Probability Matrix, computes the transpose
+of it and returns the result of power infinity. 
+
 ```ruby
 import numpy as np
 
@@ -367,7 +371,7 @@ MM = M.transpose()
 for j in range(256):
     DiaSum[j,0] = sum(MM[j,:]) # sum of all row
     
-#np.savetxt('transitionmatrixstandard.csv', MM)
+np.savetxt('transitionmatrixstandard.csv', MM)
             
 
 mm=np.linalg.matrix_power(MM, 1000000)

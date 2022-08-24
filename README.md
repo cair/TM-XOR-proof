@@ -150,7 +150,7 @@ Accuracy on test data (no noise): 1.0
 
 #### Code: proof_of_the_convergence.py
 
-This the python implementation of Algorithm 1 in Apendix 1 of the ariticle. Mainly, the code generates the Transition Probability Matrix, computes the transpose
+This is the python implementation of Algorithm 1 in Apendix 1 of the ariticle. Mainly, the code generates the Transition Probability Matrix, computes the transpose
 of it and returns the result of power infinity. 
 
 ```ruby

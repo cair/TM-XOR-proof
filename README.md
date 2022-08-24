@@ -87,6 +87,9 @@ feature 1 TA 2 State 101
 ```
 
 #### Code: XORDemo_print.py
+
+In this experiment, we are interested in seeing the distribution of the sub-potterns among clauses when different thresholds are used (``` T=2 ``` and ``` T=3 ```: a detail explanation can be found in the section four of the article). For this, the state of the Tsetlin Automata in each clause at each training epoch is saved into an excel file. After a socondary analysis on excel, plots in section four in the artical are created.
+
 ```ruby
 #!/usr/bin/python
 
@@ -140,7 +143,12 @@ tsetlin_machine.fit(X_training, y_training, y_training.shape[0], epochs=epochs)
 print ("Accuracy on test data (no noise):", tsetlin_machine.evaluate(X_test, y_test, y_test.shape[0]))
 ```
 
-#### code: proof_of_the_convergence.py
+#### Output
+```
+Accuracy on test data (no noise): 1.0
+```
+
+#### Code: proof_of_the_convergence.py
 ```ruby
 import numpy as np
 

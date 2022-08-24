@@ -68,7 +68,19 @@ for clause in range(number_of_clauses):
             print('feature %d TA %d State %d' % (feature, tatype+1, State)),
     print('/n')
 ```
+```
+Clause 1
+feature 0 TA 1 State 99
+feature 0 TA 2 State 101
+feature 1 TA 1 State 101
+feature 1 TA 2 State 12
 
+Clause 2
+feature 0 TA 1 State 101
+feature 0 TA 2 State 70
+feature 1 TA 1 State 100
+feature 1 TA 2 State 101
+```
 
 #### Code: XORDemo_print.py
 ```ruby

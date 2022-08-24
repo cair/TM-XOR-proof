@@ -330,7 +330,7 @@ cdef class TsetlinMachine:
             print_index = 0
             for clauseindex in range(self.number_of_clauses):
                 for feature_index in [0,1]:
-                    for feature_type in [0,1] # 0 original, 1 negated
+                    for feature_type in [0,1]: # 0 original, 1 negated
                         ClauseOuts[print_index,epoch] = self.ta_state[clauseindex, feature_index, feature_type]
                         print_index += 1
                 

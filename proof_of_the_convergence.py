@@ -215,7 +215,7 @@ MM = M.transpose()
 for j in range(256):
     DiaSum[j,0] = sum(MM[j,:]) # sum of all row
     
-#np.savetxt('transitionmatrixstandard.csv', MM)
+np.savetxt('transitionmatrixstandard.csv', MM)
             
 
 mm=np.linalg.matrix_power(MM, 1000000)
